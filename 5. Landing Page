@@ -1,0 +1,153 @@
+<!-- HTML FILE-->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Aura Sync</title>
+    <link rel="stylesheet" href="conn.css">
+</head>
+<body>
+
+    
+    <nav class="navbar">
+        <h1 class="logo"><span>Aura</span>SYNC</h1>
+
+        <div class="link">
+            <a href="#">Home</a>
+            <a href="#">About Us</a>
+            <a href="#">Work</a>
+            <a href="#">Contact Us</a>
+            <button class="start-btn">Get Started</button>
+        </div>
+    </nav>
+
+    
+    <section class="txtcon">
+
+        <div class="left">
+            <h1>Best television for you</h1>
+
+            <p>
+                Discover the next generation of smart televisions designed
+                with AI-powered clarity, immersive colors, and ultra-thin
+                design to enhance your viewing experience.
+            </p>
+
+            <button class="explore-btn">Explore More</button>
+        </div>
+
+        <div class="right">
+            <img src="ai.png" alt="Television Image">
+        </div>
+
+    </section>
+
+</body>
+</html>
+
+<--CSS File-->
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px 60px;
+}
+
+.logo {
+    font-size: 32px;
+    font-weight: 850;
+}
+
+.logo span {
+    color: orange;
+}
+
+.link {
+    display: flex;
+    gap: 30px;
+    align-items: center;
+    transition: 1s;
+}
+
+.link a {
+    text-decoration: none;
+    font-size: 18px;
+    color: black;
+}
+
+.start-btn {
+    padding: 14px 28px;
+    background-color: #ff9900;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.3s ease;  
+}
+
+.start-btn:hover {
+    background-color: black;   
+    color: #ff9900;            
+    transform: scale(1.05);
+}
+
+
+.txtcon{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 70px 80px;
+}
+
+.left {
+    width: 50%;
+}
+
+.left h1 {
+    font-size: 55px;
+    font-weight: 700;
+    margin: 0;
+    line-height: 1.2;
+}
+
+.left p {
+    font-size: 18px;
+    margin: 20px 0;
+    width: 80%;
+    color: #444;
+}
+
+.explore-btn {
+    padding: 14px 28px;
+    background-color: #ff9900;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.3s ease;    
+}
+
+.explore-btn:hover {
+    background-color: black;   
+    color: #ff9900;            
+    transform: scale(1.05);    
+}
+
+.right {
+    width: 45%;
+}
+
+.right img {
+    width: 100%;
+    border-radius: 12px;
+}
