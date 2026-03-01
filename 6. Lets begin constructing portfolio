@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+    <head><title>Portfoloio</title>
+        <style>
+            *{
+                margin: 0px;
+                padding: 0px;
+                box-sizing: border-box;
+            }
+            .navbar {
+                display: flex;
+                justify-content: space-around;
+                align-items: center;
+                padding: 60px;
+
+            }
+            .hero {
+                width: 100%;
+                text-align: center;
+                margin-top: 40px;
+            }
+
+            .hero h1 {
+                font-size: 52px;
+                font-weight: 900;
+                line-height: 1.1;
+                text-transform: uppercase;
+            }
+
+        </style>
+    </head>
+    <body >
+        <!-- navbar -->
+        <div class="navbar">
+            <h4>Tanaji<br>Bodadkar</h4>
+            <a href="#">About</a>
+            <a href="#">Work</a>
+        </div>
+        <div class="hero">
+            <h1>AI Engineer | Full Stack Developer | Cloud</h1>
+        </div>
+    </body>
+</html>
