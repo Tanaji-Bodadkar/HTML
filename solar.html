@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Solar System</title>
+
+<style>
+
+body{
+margin:0;
+background:black;
+display:flex;
+justify-content:center;
+align-items:center;
+height:100vh;
+color:white;
+font-size:30px;
+}
+
+#toggle:checked ~ .legend{
+display:block;
+}
+
+.tool-btn{
+position:fixed;
+top:20px;
+left:20px;
+padding:10px 15px;
+background:#222;
+color:white;
+border:none;
+border-radius:10px;
+cursor:pointer;
+font-size:16px;
+box-shadow:0 0 10px rgba(255,255,255,0.3);
+}
+
+.legend{
+position:fixed;
+top:70px;
+left:20px;
+background:rgba(43,42,42,0.8);
+padding:12px;
+border-radius:15px;
+color:white;
+font-family:Arial;
+box-shadow:0 0 10px rgba(255,255,255,0.2);
+display:none;
+font-size:14px; /* smaller text */
+}
+
+.legend h2{
+font-size:16px;
+margin:0 0 8px 0;
+text-align:center;
+}
+
+.legend table{
+border-collapse:collapse;
+font-size:13px; /* table text size */
+}
+
+.legend td,
+.legend th{
+padding:4px 8px; /* smaller spacing */
+border-bottom:1px solid rgba(255,255,255,0.2);
+}
+
+.solar-system{
+position:relative;
+width:800px;
+height:800px;
+}
+
+/* SUN */
+
+.sun{
+position:absolute;
+font-size:80px;
+top:55%;
+left:50%;
+transform:translate(-50%,-50%);
+}
+
+/* ORBIT */
+
+.orbit{
+margin-top: 50px;
+position:absolute;
+border:1px dashed rgba(255,255,255,0.2);
+border-radius:50%;
+top:50%;
+left:50%;
+transform:translate(-50%,-50%);
+animation:spin linear infinite;
+}
+
+/* PLANET */
+
+.planet{
+position:absolute;
+top:-15px;
+left:50%;
+transform:translateX(-50%);
+}
+
+/* ORBIT SIZES */
+
+.mercury{ width:150px; height:150px; animation-duration:6s;}
+.venus{ width:220px; height:220px; animation-duration:10s;}
+.earth{ width:300px; height:300px; animation-duration:15s;}
+.mars{ width:370px; height:370px; animation-duration:20s;}
+.jupiter{ width:470px; height:470px; animation-duration:30s;}
+.saturn{ width:570px; height:570px; animation-duration:40s;}
+.uranus{ width:650px; height:650px; animation-duration:50s;}
+.neptune{ width:720px; height:720px; animation-duration:60s;}
+
+@keyframes spin{
+from{
+transform:translate(-50%,-50%) rotate(0deg);
+}
+to{
+transform:translate(-50%,-50%) rotate(360deg);
+}
+}
+
+</style>
+</head>
+
+<body>
+<script>
+function toggleLegend(){
+const box = document.getElementById("legendBox");
+
+if(box.style.display === "block"){
+box.style.display = "none";
+}else{
+box.style.display = "block";
+}
+}
+</script>
+<header>
+    <article>Solar system</article>
+</header>
+<button class="tool-btn" onclick="toggleLegend()">🛰 Planets</button>
+<div class="legend" id="legendBox">
+
+<h2>Solar System</h2>
+
+<table>
+<tr><th>Planet</th><th>Emoji</th></tr>
+<tr><td>Sun</td><td>🌞</td></tr>
+<tr><td>Mercury</td><td>⚪</td></tr>
+<tr><td>Venus</td><td>🟡</td></tr>
+<tr><td>Earth</td><td>🌍</td></tr>
+<tr><td>Mars</td><td>🔴</td></tr>
+<tr><td>Jupiter</td><td>🟠</td></tr>
+<tr><td>Saturn</td><td>🪐</td></tr>
+<tr><td>Uranus</td><td>🔵</td></tr>
+<tr><td>Neptune</td><td>🔷</td></tr>
+</table>
+
+</div>
+
+<div class="solar-system">
+
+<div class="sun">🌞</div>
+
+<div class="orbit mercury">
+<div class="planet">⚪</div>
+</div>
+
+<div class="orbit venus">
+<div class="planet">🟡</div>
+</div>
+
+<div class="orbit earth">
+<div class="planet">🌍</div>
+</div>
+
+<div class="orbit mars">
+<div class="planet">🔴</div>
+</div>
+
+<div class="orbit jupiter">
+<div class="planet">🟠</div>
+</div>
+
+<div class="orbit saturn">
+<div class="planet">🪐</div>
+</div>
+
+<div class="orbit uranus">
+<div class="planet">🔵</div>
+</div>
+
+<div class="orbit neptune">
+<div class="planet">🔷</div>
+</div>
+
+</div>
+
+</body>
+</html>
