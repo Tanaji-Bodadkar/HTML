@@ -1,0 +1,178 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800&display=swap');
+
+body {
+    margin: 0;
+    background: #000;   /* full black theme */
+    font-family: 'Poppins', sans-serif;
+}
+
+/* ---------------- NAVBAR ---------------- */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px 60px;
+}
+
+.logo {
+    font-size: 36px;
+    font-weight: 900;
+    color: white;
+}
+
+.logo span {
+    color: #0095cc; /* BLUE SHADE */
+}
+
+.link {
+    display: flex;
+    gap: 40px;
+    align-items: center;
+}
+
+.link a {
+    text-decoration: none;
+    font-size: 19px;
+    font-weight: 700;
+    color: white;
+}
+
+.start-btn {
+    padding: 14px 28px;
+    background-color: #0095cc;
+    color: black;
+    border: none;
+    border-radius: 8px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.start-btn:hover {
+    background: black;
+    color: #0095cc;
+    transform: scale(1.08);
+}
+
+/* ---------------- MAIN SECTION ---------------- */
+.txtcon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 60px;
+    gap: 280px;     /* big spacing between both boxes */
+}
+
+/* ---------------- TEXT BOX ---------------- */
+.text-box {
+    width: 430px;
+    height: 200px;  /* Same height as GIF */
+    background: rgba(255, 255, 255, 0.08);
+    padding: 28px;
+    border-radius: 18px;
+    backdrop-filter: blur(6px);
+    border: 1px solid rgba(0, 149, 204, 0.3); /* BLUE EDGE */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: left;
+    transform: translateX(-80px); /* moves left so it expands left */
+}
+
+.text-box h1 {
+    font-size: 36px;
+    margin-bottom: 12px;
+    color: white;
+    line-height: 1.2;
+}
+
+.text-box p {
+    font-size: 15px;
+    color: #d7d7d7;
+    width: 90%;
+    line-height: 1.5;
+}
+
+/* ---------------- EXPLORE BUTTON ---------------- */
+.explore-btn {
+    margin-top: 18px;
+    padding: 10px 20px;
+    margin-bottom: 20px;
+    background: #0095cc;
+    color: black;
+    border: none;
+    border-radius: 8px;
+    font-size: 15px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.explore-btn:hover {
+    background: black;
+    color: #0095cc;
+    transform: scale(1.06);
+}
+
+/* ---------------- GIF BOX ---------------- */
+.right {
+    width: 430px;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.right img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+    border-radius: 18px;
+    box-shadow: 0 0 25px rgba(0, 149, 204, 0.55); /* BLUE GLOW */
+}
+
+/* ---------------- FOOTER ---------------- */
+.footer {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 60px 40px;
+    background: black;
+    margin-top: 80px;
+    border-top: 2px solid #0095cc;
+}
+
+.footer .cards {
+    width: 260px;
+    height: 250px;
+    background-color: #1b1b1b;
+    padding: 20px;
+    border-radius: 18px;
+    border: 1px solid #333;
+    box-shadow: 0 0 20px rgba(255,255,255,0.05);
+    transition: 0.3s ease;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.footer .cards h3 {
+    color: #0095cc;
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+
+.footer .cards p,
+.footer .cards ul {
+    color: #ccc;
+    font-size: 15px;
+    line-height: 1.5;
+    list-style: none; /* for marquee list item */
+}
+
+.footer .cards:hover {
+    transform: translateY(-10px);
+    border-color: #0095cc;
+    box-shadow: 0 0 25px rgba(0, 149, 204, 0.4);
+}

@@ -1,0 +1,48 @@
+body{
+    
+    text-align: center;
+    background: #1f1e1e;
+}
+
+h1{
+    font-family: 'Bungee', cursive;
+    font-size: 55px;
+    color: #ff0055;
+    letter-spacing: 3px;
+}
+
+/* Masonry layout  for making pinterest type view */
+.Gallery{
+    column-count: 4;
+    column-gap: 15px;
+    padding: 60px;
+}
+
+.Gallery img{
+    width: 100%;
+    margin-bottom: 15px;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+
+.Gallery img:hover{
+    transform: scale(1.05);
+}
+
+@media (max-width:1000px){
+    .Gallery{
+        column-count:3;
+    }
+}
+
+@media (max-width:700px){
+    .Gallery{
+        column-count:2;
+    }
+}
+
+@media (max-width:500px){
+    .Gallery{
+        column-count:1;
+    }
+}
