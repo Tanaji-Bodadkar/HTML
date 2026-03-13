@@ -1,0 +1,65 @@
+<!-- LETS CREATE A FORM -->
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>FORM</title>
+        <style>
+            header{
+                text-align: center;
+                 margin-top: 20px;
+                 font-size: 30px;
+            }
+            form{
+                width: 400px;
+            margin: 30px auto;
+            padding: 25px;
+            border: 2px solid #333;
+            border-radius: 10px;
+            background-color: rgb(187, 162, 237);
+            }
+            footer{
+                text-align: center;
+                padding: 15px;
+            }
+        </style>
+    </head>
+    <body bgcolor="beige">
+        <header>
+            <h3 ><strong><u>FORM</u></strong></h3>
+        </header>
+        <form action="" method="post" >
+            <label for="UN">username:</label>
+            <input type="text" id="UN" placeholder="Enter yiur username"><br><br>
+            <label for="UN">E-mail:</label>
+            <input type="email" id="mail" placeholder="Enter your email-id"><br><br>
+            <label for="review">What brings you to join us! </label><br><br>
+             <textarea id="review" name="review" rows="8" cols="50">
+                </textarea><br><br>
+                <label for="inte">WHICH TREND YOU ARE INTO?</label><BR>
+            <label for="HTML">WEBDEV</label>
+            <input type="checkbox" id="WEBDEV" name="WEBDEV" placeholder="WEBDEV">
+            <label for="ops">DEVOPS</label>
+            <input type="checkbox" id="DEVOPS" name="DEVOPS" placeholder="DEVOPS">
+            <label for="back">BACKEND</label>
+            <input type="checkbox" id="BACKEND" name="BACKEND" placeholder="BACKEND">
+            <label for="CL">CLOUD</label>
+            <input type="checkbox" id="CLOUD" name="CLOUD" placeholder="CLOUD"><br><br>
+            <label for="ph">Phone number:</label>
+             <b>+91</b> <input type="number" id="ph" maxlength="10" pattern="[0-9]{10}" placeholder="10 didgit phone number" required>
+       <br><br>    <label>How soon are you willing to join us?</label><br>
+
+<label for="soon">Soon</label>
+<input type="radio" id="soon" name="join_time" value="soon">
+
+<label for="thinking">Thinking</label>
+<input type="radio" id="thinking" name="join_time" value="thinking"><br><br>
+<input type="button" value="submit">
+        </form>
+        <footer>
+            <a href="">about Us</a>
+            <a href="">mail</a>
+            <a href="">support</a>
+        </footer>
+
+    </body>
+</html>
